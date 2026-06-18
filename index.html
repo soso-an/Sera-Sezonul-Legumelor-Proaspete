@@ -4,16 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sera – Sezonul Legumelor Proaspete</title>
-  <style>
-    :root {
-      --green: #2f6f3e;
-      --light-green: #eaf5ec;
-      --text: #1f2933;
-      --muted: #6b7280;
-      --white: #ffffff;
-      --border: #d9e6dc;
-    }
 
+  <style>
     * {
       box-sizing: border-box;
     }
@@ -21,142 +13,99 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, var(--light-green), #ffffff);
-      color: var(--text);
+      background: #eaf5ec;
+      color: #1f2933;
     }
 
-    header {
-      padding: 36px 20px 24px;
+    .hero {
       text-align: center;
+      padding: 34px 20px 26px;
     }
 
-    .container {
-      width: min(1100px, 94%);
-      margin: 0 auto;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--white);
-      color: var(--green);
-      border: 1px solid var(--border);
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    h1 {
+    .hero h1 {
       margin: 0;
-      color: var(--green);
-      font-size: clamp(28px, 4vw, 48px);
+      color: #2f6f3e;
+      font-size: clamp(32px, 5vw, 58px);
       line-height: 1.1;
+      font-weight: 800;
     }
 
-    .subtitle {
-      max-width: 760px;
-      margin: 14px auto 0;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.5;
+    .slides {
+      width: min(1180px, 96%);
+      margin: 0 auto 40px;
     }
 
-    .actions {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 24px 0 10px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 700;
-      border: 1px solid var(--green);
-    }
-
-    .button.primary {
-      background: var(--green);
-      color: var(--white);
-    }
-
-    .button.secondary {
-      background: var(--white);
-      color: var(--green);
-    }
-
-    .viewer-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      box-shadow: 0 16px 40px rgba(47, 111, 62, 0.12);
-      overflow: hidden;
-      margin: 28px auto 40px;
-    }
-
-    .viewer-topbar {
-      padding: 14px 18px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: center;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    iframe {
+    .slides img {
       width: 100%;
-      height: 82vh;
-      border: 0;
       display: block;
-      background: #f3f4f6;
+      margin-bottom: 28px;
+      border-radius: 12px;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+      background: #ffffff;
     }
 
     footer {
-      padding: 20px;
       text-align: center;
-      color: var(--muted);
+      padding: 24px 16px 32px;
+      color: #6b7280;
       font-size: 14px;
     }
 
-    @media (max-width: 640px) {
-      iframe {
-        height: 72vh;
+    @media (max-width: 700px) {
+      .hero {
+        padding: 24px 14px 18px;
       }
 
-      .viewer-topbar {
-        flex-direction: column;
-        align-items: flex-start;
+      .slides {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .slides img {
+        border-radius: 0;
+        margin-bottom: 14px;
+        box-shadow: none;
       }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <div class="badge">PDF online</div>
-      <h1>Sera – Sezonul Legumelor Proaspete</h1>
-      
-    </div>
+
+  <header class="hero">
+    <h1>Sera – Sezonul Legumelor Proaspete</h1>
   </header>
 
-  <main class="container">
-    <section class="viewer-card">
-      
-
-      <iframe src="docs/Sera-Sezonul-Legumelor-Proaspete.pdf#toolbar=0" >
-        Browserul tău nu poate afișa PDF-uri inline.
-      </iframe>
-    </section>
+  <main class="slides">
+    <img src="slides/Diapozitiv1.jpg" alt="Diapozitiv 1">
+    <img src="slides/Diapozitiv2.jpg" alt="Diapozitiv 2">
+    <img src="slides/Diapozitiv3.jpg" alt="Diapozitiv 3">
+    <img src="slides/Diapozitiv4.jpg" alt="Diapozitiv 4">
+    <img src="slides/Diapozitiv5.jpg" alt="Diapozitiv 5">
+    <img src="slides/Diapozitiv6.jpg" alt="Diapozitiv 6">
+    <img src="slides/Diapozitiv7.jpg" alt="Diapozitiv 7">
+    <img src="slides/Diapozitiv8.jpg" alt="Diapozitiv 8">
+    <img src="slides/Diapozitiv9.jpg" alt="Diapozitiv 9">
+    <img src="slides/Diapozitiv10.jpg" alt="Diapozitiv 10">
+    <img src="slides/Diapozitiv11.jpg" alt="Diapozitiv 11">
+    <img src="slides/Diapozitiv12.jpg" alt="Diapozitiv 12">
+    <img src="slides/Diapozitiv13.jpg" alt="Diapozitiv 13">
+    <img src="slides/Diapozitiv14.jpg" alt="Diapozitiv 14">
+    <img src="slides/Diapozitiv15.jpg" alt="Diapozitiv 15">
+    <img src="slides/Diapozitiv16.jpg" alt="Diapozitiv 16">
+    <img src="slides/Diapozitiv17.jpg" alt="Diapozitiv 17">
+    <img src="slides/Diapozitiv18.jpg" alt="Diapozitiv 18">
+    <img src="slides/Diapozitiv19.jpg" alt="Diapozitiv 19">
+    <img src="slides/Diapozitiv20.jpg" alt="Diapozitiv 20">
+    <img src="slides/Diapozitiv21.jpg" alt="Diapozitiv 21">
+    <img src="slides/Diapozitiv22.jpg" alt="Diapozitiv 22">
+    <img src="slides/Diapozitiv23.jpg" alt="Diapozitiv 23">
+    <img src="slides/Diapozitiv24.jpg" alt="Diapozitiv 24">
   </main>
 
   <footer>
-    Publicat cu GitHub Pages.
+    Sera – Sezonul Legumelor Proaspete
   </footer>
+
 </body>
 </html>
