@@ -1,30 +1,29 @@
 # Sera – Sezonul Legumelor Proaspete
 
-Structură GitHub Pages pentru afișarea unui PDF embedded într-o pagină HTML.
+Prezentare publicată prin GitHub Pages.
 
-## Structură fișiere
+## Conținut
+
+Această prezentare conține 24 de diapozitive afișate direct în browser ca imagini, fără utilizarea unui fișier PDF.
+
+## Structura proiectului
 
 ```text
-sera-github-pages/
-├── index.html
-├── README.md
-└── docs/
-    └── Sera-Sezonul-Legumelor-Proaspete.pdf
+index.html
+
+slides/
+├── Diapozitiv1.jpg
+├── Diapozitiv2.jpg
+...
+├── Diapozitiv24.jpg
 ```
 
-## Pași de utilizare
+## Publicare
 
-1. Pune PDF-ul în folderul `docs/`.
-2. Redenumește PDF-ul exact:
-   `Sera-Sezonul-Legumelor-Proaspete.pdf`
-3. Încarcă toate fișierele într-un repository GitHub.
-4. Intră în repository la `Settings` → `Pages`.
-5. La `Source`, alege `Deploy from a branch`.
-6. La `Branch`, alege `main` și folder `/root`.
-7. Apasă `Save`.
+Proiectul este găzduit prin GitHub Pages.
 
-După activare, pagina va fi disponibilă la un link de forma:
+Pagina poate fi accesată la:
 
 ```text
-https://username.github.io/nume-repository/
+https://USERNAME.github.io/Sera-Sezonul-Legumelor-Proaspete/
 ```
